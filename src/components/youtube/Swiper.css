@@ -1,0 +1,25 @@
+.mySwiper {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+}
+.slick-track {
+  display: flex;
+  height: 100%;
+  gap: 20px;
+}
+.slick-list {
+  height: 100%;
+  overflow: hidden;
+}
+.slick-arrow {
+  display: none;
+}
+.arrrows {
+  cursor: pointer;
+  font-size: 2rem;
+}
+.arrrows:hover {
+  color: green;
+}

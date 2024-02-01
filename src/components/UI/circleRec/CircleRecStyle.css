@@ -1,0 +1,208 @@
+.flex {
+  padding-top: 3.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+
+.microphone-icon-circle {
+  position: absolute;
+  font-size: 20px;
+  border-radius: 50%;
+  overflow: visible;
+  text-align: center;
+  vertical-align: center;
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: background-color 2s ease;
+
+  .mic_none {
+    display: block;
+  }
+
+  .mic_off {
+    display: none;
+  }
+}
+
+.error .microphone-icon-circle {
+  background-color: rgb(255, 255, 255);
+  .mic_none {
+    display: none;
+  }
+
+  .mic_off {
+    display: block;
+  }
+}
+
+.recording-circle-100 {
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+  z-index: 2;
+  animation: recording-circle1 2s infinite;
+}
+
+.recording-circle-120 {
+  width: 13px;
+  height: 13px;
+  background-color: #ff0000a4;
+  border: 0px solid #ffffff;
+  z-index: 2;
+  animation: recording-circle2 2s infinite;
+}
+
+.recording-circle-150 {
+  width: 20.5px;
+  height: 20.5px;
+  background-color: #b508ff5b;
+  border: 0px solid #ff0bfb;
+  z-index: 1;
+  animation: recording-circle3 2s infinite;
+}
+
+.recording-circle {
+  position: absolute;
+
+  font-size: 10px;
+  border-radius: 50%;
+  overflow: visible;
+  text-align: center;
+  vertical-align: center;
+  transition: border 0.9s, background-color 0.8s;
+  transition-timing-function: ease;
+  display: none;
+}
+
+.recording .recording-circle {
+  display: block;
+}
+
+.recording .recording-circle-100 {
+  display: flex;
+}
+
+@keyframes recording-circle1 {
+  0% {
+    border-width: 0px;
+    border-color: #ffffff;
+  }
+
+  50% {
+    border-width: 7px;
+    border-color: #ffffffbf;
+  }
+
+  75% {
+    border-width: 5.5px;
+    border-color: #ffffffd6;
+  }
+
+  100% {
+    border-width: 0px;
+    border-color: #ffffff67;
+  }
+}
+
+@keyframes recording-circle2 {
+  0% {
+    border-width: 0px;
+    border-color: #ffffff59;
+  }
+
+  50% {
+    border-width: 7px;
+    border-color: #ffffff67;
+    opacity: 0.5;
+  }
+
+  75% {
+    border-width: 5px;
+    border-color: #ffffff50;
+    opacity: 0.8;
+  }
+
+  100% {
+    border-width: 2px;
+    border-color: #ffffff38;
+  }
+}
+
+@keyframes recording-circle3 {
+  0% {
+    border-width: 0px;
+    border-color: rgba(255, 255, 255, 0.304);
+  }
+
+  50% {
+    border-width: 5px;
+    border-color: #ffffff2a;
+    opacity: 0.5;
+  }
+
+  75% {
+    border-width: 3px;
+    border-color: #8bd6ef4c;
+    opacity: 0.8;
+  }
+
+  100% {
+    border-width: -2px;
+    border-color: #ffffff33;
+  }
+}
+
+.processing-circle-140 {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  z-index: 2;
+  border: solid 2px transparent;
+  animation: processing-circle 2s infinite;
+}
+
+.processing-circle-160 {
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
+  z-index: 1;
+  animation: processing-circle1 2s infinite;
+  border: solid 4px transparent;
+}
+
+.processing-circle {
+  border-top-color: rgb(255, 255, 255);
+  position: absolute;
+  display: none;
+}
+
+.processing .processing-circle {
+  display: block;
+}
+
+@keyframes processing-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes processing-circle1 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
