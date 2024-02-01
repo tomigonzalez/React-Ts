@@ -24,12 +24,12 @@ const VideosYoutubeContent: React.FC<{}> = () => {
       >
         <ContenedorVideos>
           <div className="overlayy"></div>
-          <img src="../public/img/grainy.jpg" />
+          <img src="public/img/grainy.jpg" />
         </ContenedorVideos>
 
         <OtrosYoutube>
           <div className="overlayy"></div>
-          <img src="../public/img/grainy.jpg" />
+          <img src="public/img/grainy.jpg" />
         </OtrosYoutube>
       </section>
 
