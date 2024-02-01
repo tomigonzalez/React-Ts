@@ -1,9 +1,10 @@
 import React from "react";
 import { ContenedorVideos, OtrosYoutube } from "./videosYoutubeContentStyle";
+import useYoutube from "../../hooks/useYoutube";
 
 const VideosYoutubeContent: React.FC<{}> = () => {
-  // const { videosDeCoscu } = useYoutube("Coscu");
-  // const videos = videosDeCoscu;
+  const { videosDeCoscu } = useYoutube("Coscu");
+  const videos = videosDeCoscu;
 
   return (
     <article
@@ -24,12 +25,12 @@ const VideosYoutubeContent: React.FC<{}> = () => {
       >
         <ContenedorVideos>
           <div className="overlayy"></div>
-          <img src="public/img/grainy.jpg" />
+          <img src={videos[0]?.snippet.thumbnails.maxres.url} />
         </ContenedorVideos>
 
         <OtrosYoutube>
           <div className="overlayy"></div>
-          <img src="public/img/grainy.jpg" />
+          <img src={videos[1]?.snippet.thumbnails.maxres.url} />
         </OtrosYoutube>
       </section>
 
@@ -41,10 +42,5 @@ const VideosYoutubeContent: React.FC<{}> = () => {
     </article>
   );
 };
-{
-  /* <img src={videos[0]?.snippet.thumbnails.maxres.url} /> */
-}
-{
-  /* <img src={videos[1]?.snippet.thumbnails.maxres.url} /> */
-}
+
 export default VideosYoutubeContent;
