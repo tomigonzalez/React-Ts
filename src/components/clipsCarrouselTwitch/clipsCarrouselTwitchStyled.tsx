@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContenedorVideos = styled.div`
   width: 60%;
-  border: 1px solid white;
+
   height: 400px;
   margin-top: 60px;
 `;
@@ -22,6 +22,10 @@ export const ContenedorMiniatura = styled.div`
 `;
 
 export const Img = styled.img`
+  border-radius: 20px 20px 0 0;
+  top: -18.9%;
+  border: 2rem;
+  position: relative;
   transform: scale(1, 0.8);
   width: 100%;
   height: 100%;
@@ -42,9 +46,9 @@ export const ContenidoTexto = styled.div`
   }
 `;
 export const Div = styled.div`
-  width: 3.8%;
+  width: 98.5%;
   display: flex;
-  position: absolute;
+  position: relative;
   margin-left: 2px;
   top: 180px;
   z-index: 1;

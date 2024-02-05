@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { SampleNextArrow, SamplePrevArrow } from "../youtube/arrows/Arrows";
 import useTwitch from "../../hooks/useTwitch";
-import { ContentYoutube } from "../youtube/ContenedorYoutubeStream";
+import { ContentYoutube, Loader5 } from "../youtube/ContenedorYoutubeStream";
 import Slider from "react-slick";
 import ClipContenedor from "./ClipContenedor";
 
 const ClipsCarrouselTwitch: React.FC<{}> = () => {
-  const { clipsDeCoscu } = useTwitch("Coscu");
+  const { clipsDeCoscu, loading } = useTwitch("Coscu");
   const videos3 = clipsDeCoscu;
   const arrayDeClips = Object.values(videos3);
 
@@ -20,6 +20,16 @@ const ClipsCarrouselTwitch: React.FC<{}> = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
+  useEffect(() => {}, [clipsDeCoscu]);
+
+  if (loading) {
+    return (
+      <ContentYoutube>
+        <Loader5 />
+      </ContentYoutube>
+    );
+  }
+
   return (
     <ContentYoutube>
       <Slider className="mySwiper" {...settings}>
@@ -30,5 +40,4 @@ const ClipsCarrouselTwitch: React.FC<{}> = () => {
     </ContentYoutube>
   );
 };
-
 export default ClipsCarrouselTwitch;

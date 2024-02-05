@@ -17,7 +17,7 @@ export const ContainerContent = styled.section`
 
 export const ContentClips = styled.div`
   width: 80%;
-  border: 1px solid white;
+
   height: 250px;
   margin-top: 60px;
 `;

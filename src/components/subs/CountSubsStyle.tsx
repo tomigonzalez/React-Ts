@@ -23,3 +23,22 @@ export const LetrasSubs = styled.p`
   color: white;
   top: -6px;
 `;
+
+export const ContenentSub2 = styled.div`
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  gap: 5px;
+  margin-bottom: 10px;
+`;
+export const Loader2 = styled.div`
+  width: 200px;
+  height: 40px;
+  background-color: #1c1b1b;
+`;
+export const Loader1 = styled.div`
+  width: 200px;
+  height: 30px;
+  background-color: #1c1b1b;
+`;

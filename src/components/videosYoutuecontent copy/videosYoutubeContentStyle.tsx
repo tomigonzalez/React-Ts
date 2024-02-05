@@ -27,7 +27,6 @@ export const ContenedorVideos = styled.div`
   height: 320px;
   margin-top: 60px;
   position: relative;
-  position: relative; /* Añade posición relativa al contenedor */
 
   & img {
     width: 100%;

@@ -2,6 +2,7 @@
 
 import React from "react";
 import useTwitch from "../../hooks/useTwitch";
+import { Loader } from "./emisionTwitchStyled";
 
 const TwitchEmbed: React.FC<{}> = ({}) => {
   const { streamData, pastBroadcast } = useTwitch("coscu");
@@ -29,9 +30,7 @@ const TwitchEmbed: React.FC<{}> = ({}) => {
       ></iframe>
     );
   } else {
-    return (
-      <div>El canal no está en directo y no hay emisiones anteriores.</div>
-    );
+    return <Loader />;
   }
 };
 

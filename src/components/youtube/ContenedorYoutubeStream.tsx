@@ -8,25 +8,12 @@ export const ContentYoutube = styled.section`
 
   align-items: CENTER;
 `;
+export const Loader5 = styled.section`
+  width: 100%;
+  height: 200px;
+  background-color: #1c1b1b;
+`;
 
-// export const Sliderr = styled(Slider)`
-//   width: 100%;
-//   display: flex;
-//   gap: 10px;
-//   .slick-track {
-//     display: flex;
-//     height: 100%;
-//     gap: 20px;
-//   }
-//   .slick-list {
-//     height: 100%;
-//     overflow: hidden;
-//   }
-
-//   button {
-//     background-color: red;
-//   }
-// `;
 export const DivFlechas = styled.div`
   height: 100%;
   align-self: CENTER;

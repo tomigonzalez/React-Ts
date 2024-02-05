@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
-import { ContenentSub, LetrasSubs, Subs } from "./CountSubsStyle";
+import {
+  ContenentSub,
+  ContenentSub2,
+  LetrasSubs,
+  Loader1,
+  Loader2,
+  Subs,
+} from "./CountSubsStyle";
 import useTwitch from "../../hooks/useTwitch";
+import { Loader } from "../emisionTwitch/emisionTwitchStyled";
 
 const CountSubs: React.FC<{}> = () => {
   const { infoData, loading, error, streamFollowers } = useTwitch("coscu");
@@ -8,7 +16,12 @@ const CountSubs: React.FC<{}> = () => {
   useEffect(() => {}, [streamFollowers, infoData]);
 
   if (loading) {
-    return <div>Cargando...</div>;
+    return (
+      <ContenentSub2>
+        <Loader2></Loader2>
+        <Loader1></Loader1>
+      </ContenentSub2>
+    );
   }
 
   if (error) {
