@@ -25,7 +25,7 @@ const TwitchEmbed: React.FC<{ channel: string }> = ({ channel }) => {
       <iframe
         src={`https://player.twitch.tv/?video=${encodeURIComponent(
           pastBroadcast.id
-        )}&parent=localhost&muted`}
+        )}&muted`}
         height="100%"
         width="100%"
         style={{ border: "none" }}
