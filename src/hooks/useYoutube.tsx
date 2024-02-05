@@ -78,7 +78,7 @@ const useYoutube = (channel: string): YoutubeData => {
             const filteredVideos = detailedVideos.filter((video: any) => {
               const duration = moment.duration(video.contentDetails.duration);
               const durationInMinutes = duration.asMinutes();
-              return durationInMinutes > 2; // Filtra videos con más de 5 minutos
+              return durationInMinutes > 2.5; // Filtra videos con más de 5 minutos
             });
 
             setVideosDeCoscu(filteredVideos); /// Actualizar los videos con información detallada
