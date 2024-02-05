@@ -8,7 +8,6 @@ import {
   Subs,
 } from "./CountSubsStyle";
 import useTwitch from "../../hooks/useTwitch";
-import { Loader } from "../emisionTwitch/emisionTwitchStyled";
 
 const CountSubs: React.FC<{}> = () => {
   const { infoData, loading, error, streamFollowers } = useTwitch("coscu");

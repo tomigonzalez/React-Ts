@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 import { SampleNextArrow, SamplePrevArrow } from "../youtube/arrows/Arrows";
 import useTwitch from "../../hooks/useTwitch";
