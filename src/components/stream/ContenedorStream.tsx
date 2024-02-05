@@ -6,7 +6,7 @@ import TwitchStream from "../emisionTwitch/emisionTwitch";
 const ContenedorStream: React.FC<{}> = () => {
   return (
     <ContainStream>
-      <TwitchStream channel="coscu"></TwitchStream>
+      <TwitchStream></TwitchStream>
     </ContainStream>
   );
 };
