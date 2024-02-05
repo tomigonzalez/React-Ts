@@ -43,3 +43,9 @@ export const ContenedorVideos = styled.div`
     background-color: rgba(0, 0, 0, 0.263);
   }
 `;
+export const ContenedorVideos2 = styled.div`
+  width: 65%;
+  height: 320px;
+  margin-top: 50px;
+  background-color: #1c1b1b;
+`;

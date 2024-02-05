@@ -1,11 +1,25 @@
-import React from "react";
-import { ContenedorVideos, OtrosYoutube } from "./videosYoutubeContentStyle";
+import React, { useEffect, useState } from "react";
+import {
+  ContenedorVideos,
+  ContenedorVideos2,
+  OtrosYoutube,
+} from "./videosYoutubeContentStyle";
 import useYoutube from "../../hooks/useYoutube";
 
 const VideosYoutubeContent: React.FC<{}> = () => {
   const { videosDeCoscu } = useYoutube("Coscu");
+  const [loading, setLoading] = useState<boolean>(true);
   const videos = videosDeCoscu;
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, [videosDeCoscu]);
+
+  if (loading) {
+    return <ContenedorVideos2></ContenedorVideos2>;
+  }
   return (
     <article
       style={{
