@@ -8,7 +8,7 @@ const TwitchEmbed: React.FC<{ channel: string }> = ({ channel }) => {
 
   const twitchURL = `https://player.twitch.tv/?channel=${encodeURIComponent(
     channel
-  )}&parent=localhost&muted`;
+  )}&muted`;
 
   if (streamData) {
     return (
