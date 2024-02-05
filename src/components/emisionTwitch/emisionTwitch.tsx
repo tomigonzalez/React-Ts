@@ -6,7 +6,7 @@ import useTwitch from "../../hooks/useTwitch";
 const TwitchEmbed: React.FC<{ channel: string }> = ({ channel }) => {
   const { streamData, pastBroadcast } = useTwitch("coscu");
 
-  const parent = "https://react-ts-gold.vercel.app"; // Reemplaza con la URL de tu sitio web
+  const parent = "https://react-ts-gold.vercel.app/"; // Reemplaza con la URL de tu sitio web
 
   const twitchURL = `https://player.twitch.tv/?channel=${encodeURIComponent(
     channel
