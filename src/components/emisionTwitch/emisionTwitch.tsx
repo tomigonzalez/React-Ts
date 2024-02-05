@@ -6,11 +6,9 @@ import useTwitch from "../../hooks/useTwitch";
 const TwitchEmbed: React.FC<{ channel: string }> = ({ channel }) => {
   const { streamData, pastBroadcast } = useTwitch("coscu");
 
-  const parent = "https://react-ts-gold.vercel.app/"; // Reemplaza con la URL de tu sitio web
-
   const twitchURL = `https://player.twitch.tv/?channel=${encodeURIComponent(
     channel
-  )}&muted&parent=${encodeURIComponent(parent)}`;
+  )}&muted&parent=https://react-ts-gold.vercel.app/`;
 
   if (streamData) {
     return (
@@ -27,7 +25,7 @@ const TwitchEmbed: React.FC<{ channel: string }> = ({ channel }) => {
       <iframe
         src={`https://player.twitch.tv/?video=${encodeURIComponent(
           pastBroadcast.id
-        )}&muted&parent=${encodeURIComponent(parent)}`}
+        )}&muted&parent=https://react-ts-gold.vercel.app/`}
         height="100%"
         width="100%"
         style={{ border: "none" }}
