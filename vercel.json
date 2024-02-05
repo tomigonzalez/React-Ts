@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "build": {
-    "env": {
-      "CSP": "frame-ancestors https://player.twitch.tv/"
-    }
-  }
-}
