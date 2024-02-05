@@ -21,7 +21,7 @@ const TwitchEmbed: React.FC<{}> = ({}) => {
   } else if (pastBroadcast) {
     return (
       <iframe
-        src={`https://player.twitch.tv/?video=${pastBroadcast.id}&parent=react-ts-gold.vercel.app/`}
+        src={`https://player.twitch.tv/?video=${pastBroadcast.id}&parent=https://react-ts-gold.vercel.app/`}
         height="100%"
         width="100%"
         style={{ border: "none" }}
