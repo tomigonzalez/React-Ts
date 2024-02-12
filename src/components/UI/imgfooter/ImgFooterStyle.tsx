@@ -11,15 +11,17 @@ export const ContenedorImgFooter = styled.div`
 `;
 
 export const Nike = styled.div`
-  width: 10%;
-  height: 78%;
+  width: 6rem;
+  height: 100%;
 `;
 export const Kongo = styled.div`
-  width: 10%;
+  width: 5rem;
+  height: 100%;
 `;
 
 export const CoscuArmy = styled.div`
-  width: 8.6%;
+  width: 4rem;
+  height: 100%;
 `;
 
 export const Img = styled.img`
