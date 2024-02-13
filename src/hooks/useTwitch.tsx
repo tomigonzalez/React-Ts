@@ -150,7 +150,7 @@ const useTwitch = (channel: string): TwitchData => {
       }
     } catch (error: any) {
       throw new Error(
-        "Error al obtener los seguidores de Coscu: " + error.message
+        "Errrr al obtenerr los seguidores de Coscu: " + error.message
       );
     }
   };
