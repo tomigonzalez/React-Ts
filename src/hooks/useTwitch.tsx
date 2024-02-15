@@ -122,7 +122,7 @@ const useTwitch = (channel: string): TwitchData => {
       return stream;
     } catch (error: any) {
       throw new Error(
-        "Error al obtener la transmisión de Coscu: " + error.message
+        "Error al obtener la transmision de Coscu: " + error.message
       );
     }
   };
@@ -178,7 +178,7 @@ const useTwitch = (channel: string): TwitchData => {
       }
     } catch (error: any) {
       throw new Error(
-        "Error al obtener los seguidores de Coscu: " + error.message
+        "Error al obtener los seguidores de Coscu : " + error.message
       );
     }
   };

@@ -85,7 +85,7 @@ const useYoutube = (channel: string): YoutubeData => {
           }
         }
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching dataaa:", error);
       }
     };
 
