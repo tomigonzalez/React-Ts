@@ -62,7 +62,7 @@ const useTwitch = (channel: string): TwitchData => {
       const accessToken = respuesta.data.access_token;
       return accessToken;
     } catch (error: any) {
-      console.error("Error al obtener el token de acceso:", error.message);
+      console.error("Error al obt el token de acceso:", error.message);
       throw error;
     }
   };
